@@ -71,6 +71,7 @@ video {
     text-align: center;
     background: #485922;
     margin-top: auto;
+    z-index: 10;
 }
 
 .header_menu {
@@ -99,8 +100,12 @@ video {
         Introdução 
                     */
 .introducao {
-	width: 100%;
-    height: 480px;
+    max-width: 100%;
+    max-height: 480px;
+    min-width: 100%;
+    min-height: 480px;
+	width: auto;
+    height: auto;
     background: url(../img/bg-intro.jpg) no-repeat center;
 	background-size: cover;
     text-align: center;
@@ -128,10 +133,10 @@ video {
 .introducao p::before {
     content: "";
     display: block;
-    width: 120px;
+    width: 60px;
     height: 3px;
     border: 2px solid;
-    margin: 15px auto 60px auto;
+    margin: 15px auto 15px auto;
 }
 
 .introducao p::after {
@@ -148,12 +153,12 @@ video {
         Button 
                 */
 .btn {
-    border: 3px solid #f2f2f2;
+    border: 3px solid #242614;
     border-radius: 6px;
     width: 60px;
     height: 60px;
-    color: #f2f2f2;
-    padding: 10px 30px;
+    color: #242614;
+    padding: 10px 36px;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -162,7 +167,29 @@ video {
 }
 
 .btn:hover {
+    color: #f2f2f2;
+    background: #242614;
+    border-color: #242614;
+}
+
+
+.btn2 {
+    border: 3px solid #242614;
+    border-radius: 6px;
+    width: 60px;
+    height: 60px;
     color: #242614;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.btn2:hover {
+    color: #f2f2f2;
+    background: #242614;
     border-color: #242614;
 }
 
@@ -176,7 +203,7 @@ video {
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 60px 0 30px 0;
+    padding: 40px 0 10px 0;
     font-family: "BlackJack";
     color: #242614;
 }
@@ -228,4 +255,92 @@ video {
 .produto_icone {
     background: #485922;
     padding: 20px;
+}
+
+.call-to-action {
+    text-align: center;
+    clear: both;
+    padding: 30px 30px 40px 30px;
+}
+
+.call-to-action p {
+    margin: 20px;
+}
+
+    /*  
+        PORTIFOLIO
+                     */
+.portfolio {
+    width: 100%;
+    background: #485922;
+    margin-bottom: 40px;
+}
+
+.portfolio .subtitulo {
+    color: #f2f2f2;
+}
+
+.portfolio .subtitulo:after {
+    background: #f2f2f2;
+}
+
+.portfolio-lista li:last-child {
+    margin-top: 15px;
+}
+
+.portfolio .btn {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+
+.portfolio p {
+    color: #f2f2f2;
+}
+
+/* Qualidades */
+
+.qualidade .subtitulo {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 0px 0 25px 0;
+    font-family: "BlackJack";
+    color: #242614;
+}
+
+.qualidade img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: blue;
+}
+
+.qualidade_lista {
+	padding-top: 20px;
+	overflow: auto; /* clear-fix */
+}
+
+.qualidade_lista li{
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.qualidade_lista li h3{
+    font-size: 30px;
+    font-family: "BlackJack";
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+
+.qualidade_lista img {
+    width: 15%;
+    height: 15%;
+}
+
+.qualidade .call-to-action{
+    padding: 0 0 30px 0;
 }
