@@ -1,0 +1,34 @@
+.qualidade {
+  margin-top: 60px;
+}
+
+.interna-sobre {
+  background: url(../img/logo-sobre8.jpg) no-repeat center;
+}
+
+.missao-sobre {
+  padding-top: 60px;
+}
+
+.missao-sobre p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+
+.missao-sobre ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 1em;
+  padding-right: 60px;
+}
+
+.foto-sobre {
+  padding-top: 20px;
+}
+
+.qualidade {
+  padding-bottom: 30px;
+}
