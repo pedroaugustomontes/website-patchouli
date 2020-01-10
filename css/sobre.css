@@ -4,6 +4,7 @@
 
 .interna-sobre {
   background: url(../img/logo-sobre8.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .missao-sobre {
@@ -31,4 +32,11 @@
 
 .qualidade {
   padding-bottom: 30px;
+}
+
+.qualidade_lista p {
+  font-size: 18px;
+  /* font-style: italic; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 20px;
 }

@@ -97,15 +97,16 @@ video {
   letter-spacing: 0.1em;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding: 20px 10px;
-}
-
-.underline {
-  text-decoration: underline;
+  padding: 5px 5px;
 }
 
 .header_menu ul li a:hover {
   color: #242614;
+  border-bottom: 3px solid;
+}
+
+.header_menu ul li a.menu-ativo {
+  border-bottom: 3px solid;
 }
 
 /* 
@@ -395,7 +396,7 @@ video {
 }
 
 .qualidade_lista li {
-  padding: 20px 40px;
+  padding: 30px 40px;
   text-align: center;
 }
 
