@@ -27,8 +27,8 @@ img {
                         */
 .section-video {
   position: relative;
-  width: 100%;
-  height: 90vh;
+  max-width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,11 +58,9 @@ video {
 }
 
 .section-video img {
-  text-align: center;
   position: relative;
-  opacity: 1;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   z-index: 11;
 }
 
@@ -74,14 +72,15 @@ video {
   text-align: center;
   background: #485922;
   margin-top: auto;
+  max-width: 100%;
+  position: relative;
+  top: 1;
   z-index: 10;
 }
 
 .header_menu {
   width: 100%;
   padding: 20px;
-  position: relative;
-  top: 0;
   background: #485922;
 }
 
@@ -113,18 +112,20 @@ video {
         Introdução 
                     */
 .introducao {
-  max-width: 100%;
-  max-height: 480px;
-  min-width: 100%;
   min-height: 480px;
-  width: auto;
-  height: auto;
   background: url(../img/bg-intro.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   padding-top: 100px;
 }
-
+@media (max-width: 779px) {
+  .introducao {
+    padding-top: 20px;
+  }
+  .introducao p {
+    margin: 0 auto;
+  }
+}
 .introducao h1 {
   font-size: 56px;
   font-weight: bold;
@@ -205,7 +206,7 @@ video {
 
 /* Introdução Interna */
 .introducao-interna {
-  width: 100%;
+  max-width: 100%;
   height: 180px;
 }
 
@@ -255,7 +256,7 @@ video {
 .subtitulo:after {
   content: "";
   display: block;
-  width: 60px;
+  width: 30px;
   height: 3px;
   background: #242614;
   margin: 10px auto;
@@ -293,6 +294,14 @@ video {
 .produtos_lista li {
   background: #b4bf5e;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 789px) {
+  .produtos_lista li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .produtos_lista li div img {
@@ -341,8 +350,12 @@ video {
         PORTIFOLIO
                      */
 .portfolio {
-  width: 100%;
+  max-width: 100%;
   background: #485922;
+}
+
+.portfolio li img {
+  max-width: 100%;
 }
 
 .portfolio .subtitulo {
@@ -456,7 +469,8 @@ video {
   width: 100%;
   background: #b4bf5e;
   color: #485922;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .footer h3 {
@@ -497,14 +511,11 @@ video {
 .footer-contato ul li a {
   color: #485922;
   text-decoration: none; /* no underline */
+  font-size: 14px;
 }
 
 .footer-contato ul li a:hover {
   color: #f2f2f2;
-}
-
-.footer-redes {
-  margin: 0 0 0 15px;
 }
 
 .footer-redes ul li {
@@ -520,10 +531,14 @@ video {
 
 .footer-redes ul li a:hover {
   border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+.footer-redes svg:hover {
+  fill: white;
 }
 
 .copyr {
-  width: 100%;
+  max-width: 100%;
   color: #f2f2f2;
   background: #485922;
   padding: 10px;
