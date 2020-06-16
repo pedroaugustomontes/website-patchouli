@@ -511,7 +511,7 @@ video {
 .footer-contato ul li a {
   color: #485922;
   text-decoration: none; /* no underline */
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-contato ul li a:hover {
